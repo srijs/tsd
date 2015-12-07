@@ -7,9 +7,8 @@
 
 declare module "form-data" {
 	export class FormData {
-		append(key: string, value: any): FormData;
-		getHeaders(): Object;
-		// TODO expand pipe
-		pipe(to: any): any;
+		append(key: string, value: any, options?: any): FormData;
+		getHeaders(): any;
+		pipe(any): any;
 	}
 }
